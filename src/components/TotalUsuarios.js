@@ -1,4 +1,6 @@
-import {useState,useEffect,Fragment} from 'react'
+import {useState,useEffect,Fragment} from 'react';
+import PersonPinCircleOutlinedIcon from '@mui/icons-material/PersonPinCircleOutlined';
+import './TotalUsuarios.css'
 
 
 function TotalUsuarios ({title}){
@@ -21,12 +23,17 @@ function TotalUsuarios ({title}){
 
     return (
        
-         <Fragment>
+         <Fragment >
+           
+            <h3 className="titleTotal">{title}</h3>  
 
-        <h3>{title}</h3>
-       
-        <p> {users} </p>
-      
+            <article className="contentProduct">
+             <PersonPinCircleOutlinedIcon 
+             sx={{ fontSize: 120,color: ' #6f1d1b' }}
+             />
+            <p className="usersTotal"> {users} </p>
+            </article>
+
         </Fragment> 
     
 

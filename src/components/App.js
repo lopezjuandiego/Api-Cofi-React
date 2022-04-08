@@ -1,28 +1,50 @@
 import TotalUsuarios from './TotalUsuarios';
 import UltimoUsuario from './UltimoUsuario';
 import ListaUsuarios from './ListaUsuarios';
+import ListaProductos from './ListaProductos';
+import TotalProductos from './TotalProductos';
+import UltimoProducto from './UltimoProducto';
 import './App.css';
 
 function App() {
   return (
-    <section>
-
-      <article>
-    <h1>DASHBOARD COFI</h1>
+    <>  
+      <article className="contentTitle">
+    <h1>DASHBOARD COFI </h1>
      </article>
 
-       <article>
+        <section className ="contain">
+
+        <section className ="containUser">
+       <article className="containTotal">
         <TotalUsuarios title='TOTAL USUARIOS' />        
       </article>    
 
-         <article>
+         <article className="containUltimo">
         <UltimoUsuario title='ULTIMO USUARIO AGREGADO' />
       </article>   
 
-      <article>
+      <article className="containListado">
         <ListaUsuarios title='LISTA DE USUARIOS' />
       </article> 
+      </section>
+
+      <section className="containProduct"> 
+      <article className="containTotal">
+        <TotalProductos title='TOTAL PRODUCTOS' />        
+      </article>    
+
+         <article className="containUltimo">
+        <UltimoProducto title='ULTIMO PRODUCTO AGREGADO' />
+      </article>   
+
+      <article className="containListado">
+        <ListaProductos title='LISTA DE PRODUCTOS' />
+      </article> 
+      </section>
+
     </section>
+    </> 
   );
 }
 

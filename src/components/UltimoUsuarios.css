@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleUltimo{
+    font-size: 2em;
+    font-family: 'Roboto';
+    color:#6f1d1b;
+    text-align: center;
+}
+
+.containLi{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    font-family: 'Roboto';
+    
+}
+
+.containP{
+    color:#6f1d1b;
+    padding: 1em;
+    font-size: 1.2vw;
+}
+
+img{
+    width: 10vw;
+    border-radius: 25px;
+}

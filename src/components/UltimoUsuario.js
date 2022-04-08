@@ -1,4 +1,5 @@
-import {useState,useEffect,Fragment} from 'react'
+import {useState,useEffect,Fragment} from 'react';
+import './UltimoUsuarios.css';
 
 
 function UltimoUsuario ({title}){
@@ -23,14 +24,16 @@ function UltimoUsuario ({title}){
        
          <Fragment>
 
-        <h3>{title}</h3>
+        <h3 className='titleUltimo'>{title}</h3>
 
-       <ul>
-        <li>               
-             <p> NOMBRE: {users.Nombre} </p>
-             <p> APELLIDO: {users.Apellido} </p>
-             <p> CORREO: {users.Email} </p>
-             <img src={users.urlAvatar} width= {150} alt={users.imagen} />
+       <ul >
+        <li className='containLi'>   
+             <article >         
+             <p className='containP'> NOMBRE: {users.Nombre}</p>             
+             <p className='containP'> APELLIDO: {users.Apellido} </p>
+             <p className='containP'> CORREO: {users.Email} </p>
+             </article>   
+             <img className='containImag' src={users.urlAvatar}  alt={users.imagen} />
         </li>  
       </ul> 
              

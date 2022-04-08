@@ -1,5 +1,5 @@
-import {useState,useEffect,Fragment} from 'react'
-
+import {useState,useEffect,Fragment} from 'react';
+import './ListaUsuarios.css';
 
 function ListaUsuarios ({title}){
     
@@ -24,15 +24,17 @@ function ListaUsuarios ({title}){
      
        <Fragment>
 
-      <h3>{title}</h3>
+      <h3 className='titleLista'>{title}</h3>
 
-     <ul>
+     <ul className='containUl'>
         { users && users.map((user, i) => 
-      <li key={i}>               
-           <p> NOMBRE: {user.Nombre} </p>
-           <p> APELLIDO: {user.Apellido} </p>
-           <p> CORREO: {user.Email} </p>
-           <img src={user.urlAvatar} width= {150} alt={user.imagen} />
+      <li className='containLi2'  key={i}> 
+           <article>            
+           <p className='titleP'> NOMBRE: {user.Nombre} </p>
+           <p className='titleP'> APELLIDO: {user.Apellido} </p>
+           <p className='titleP'> CORREO: {user.Email} </p>
+           </article>  
+           <img  className='containImg'  src={user.urlAvatar}  alt={user.imagen} />
       </li>
         )}  
     </ul> 

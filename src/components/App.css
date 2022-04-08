@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
-    height: 164vh;
+    height: 170vh;
 }
 
 
@@ -80,17 +80,19 @@
 .containListado{
     border: 1px solid #fff;
     border-radius: 10%;
-    width: 70%;
-    height: 48vh;
+    width: 76%;
+    height: 54vh;
     background-color: #ffe6a7;
     box-shadow: 10px 10px  #1a1919;
-    transition: all 0.2s linear;
-    padding: 1.5em;
-    overflow-y: scroll
+    transition: all 0.2s linear;    
+    
 }
 
 .containListado:hover{
     box-shadow: 10px 10px  #e96a6a;
-    width: 73%;
-    height: 50vh;
+    width: 79%;
+    height: 58vh;
 }
+
+
+

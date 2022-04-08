@@ -1,5 +1,5 @@
 import {useState,useEffect,Fragment} from 'react'
-
+import './ListaUsuarios.css';
 
 function ListaUsuarios ({title}){
     
@@ -24,17 +24,19 @@ function ListaUsuarios ({title}){
      
        <Fragment>
 
-      <h3>{title}</h3>
+      <h3 className='titleLista'>{title}</h3>
 
-     <ul>
+     <ul className='containUl'>
         { products && products.map((product, i) => 
-      <li key={i}>               
-          <p> ORIGEN: {product.Origen.country} </p>
-             <p> TIPO DE GRANO: {product.Grano.tipoDeGrano} </p> 
-             <p> CANTIDAD: {product.Cantidad.Cantidad + " gramos"} </p> 
-              <p> PRECIO: {product.Precio + " pesos"} </p>
-             <p> OFERTA: {product.Oferta ? "Producto en oferta" : "No está de oferta"} </p> 
-            <img src={product.urlImagen} width= {150} alt={product.imagen} /> 
+      <li className='containLi2' key={i}>  
+          <article>           
+          <p className='titleP'> ORIGEN: {product.Origen.country} </p>
+             <p className='titleP'> TIPO DE GRANO: {product.Grano.tipoDeGrano} </p> 
+             <p className='titleP'> CANTIDAD: {product.Cantidad.Cantidad + " gramos"} </p> 
+              <p className='titleP'> PRECIO: {product.Precio + " pesos"} </p>
+             <p className='titleP'> OFERTA: {product.Oferta ? "Producto en oferta" : "No está de oferta"} </p> 
+             </article>  
+            <img className='containImg'  src={product.urlImagen}  alt={product.imagen} /> 
       </li>
         )}  
     </ul> 

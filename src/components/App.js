@@ -21,7 +21,7 @@ function App() {
       </article>    
 
          <article className="containUltimo">
-        <UltimoUsuario title='ULTIMO USUARIO AGREGADO' />
+        <UltimoUsuario title='ÚLTIMO USUARIO AGREGADO' />
       </article>   
 
       <article className="containListado">
@@ -35,7 +35,7 @@ function App() {
       </article>    
 
          <article className="containUltimo">
-        <UltimoProducto title='ULTIMO PRODUCTO AGREGADO' />
+        <UltimoProducto title='ÚLTIMO PRODUCTO AGREGADO' />
       </article>   
 
       <article className="containListado">
